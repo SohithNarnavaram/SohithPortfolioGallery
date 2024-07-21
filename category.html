@@ -1,0 +1,2057 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" >
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery - Sohith Narnavaram</title>
+    <title>Disable Save Image</title>
+    <style>
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .image-container img {
+            display: block;
+        }
+
+        .image-container .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0); /* Transparent overlay */
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+    <script>
+        // Disable right-click context menu for the entire document
+        document.addEventListener('contextmenu', function(event) {
+            if (event.target.closest('.image-container')) {
+                event.preventDefault();
+            }
+        });
+
+        // Additional precaution: Disable dragging of images
+        document.querySelectorAll('img').forEach(function(img) {
+            img.setAttribute('draggable', false);
+        });
+    </script>
+</body>
+</html>
+
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="S logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="S logo.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap">
+
+
+        <!-- # site header 
+        ================================================== -->
+        <header id="masthead" class="s-header">
+
+            <div class="s-header__branding">
+                <p class="site-title">
+                    <a href="index.html" rel="home">Sohith Narnavaram.</a>
+                </p>
+            </div>
+
+            <div class="row s-header__navigation">
+
+                <nav class="s-header__nav-wrap">
+    
+                    <h3 class="s-header__nav-heading">Navigate to</h3>
+    
+                    <ul class="s-header__nav">
+                        <li><a href="index.html" title="">Home</a></li>
+                        <li class="current-menu-item has-Photographs">
+                            <a href="#0" title="" class="">Gallery</a>
+                            <ul class="sub-menu">
+                                <li><a href="category.html">Concert</a></li>
+                                <li><a href="category.html">Lifestyle</a></li>
+                                <li><a href="category.html">Potrait</a></li>
+                                <li><a href="category.html">WildLife</a></li>
+                                <li><a href="category.html">Candid</a></li>
+                                <li><a href="category.html">Food</a></li>
+                                <li><a href="category.html">Monochromatic</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="styles.html" title="">Styles</a></li>
+                        <li><a href="about.html" title="">About</a></li>
+                        <li><a href="contact.html" title="">Contact</a></li>
+                    </ul> <!-- end s-header__nav -->
+
+                </nav> <!-- end s-header__nav-wrap -->
+    
+            </div> <!-- end s-header__navigation -->
+
+            <div class="s-header__search">
+
+                <div class="s-header__search-inner">
+                    <div class="row">
+    
+                        <form role="search" method="get" class="s-header__search-form" action="#">
+                            <label>
+                                <span class="u-screen-reader-text">Search for:</span>
+                                <input type="search" class="s-header__search-field" placeholder="Search for..." value="" name="s" title="Search for:" autocomplete="off">
+                            </label>
+                            <input type="submit" class="s-header__search-submit" value="Search"> 
+                        </form>
+    
+                        <a href="#0" title="Close Search" class="s-header__search-close">Close</a>
+    
+                    </div> <!-- end row -->
+                </div> <!-- s-header__search-inner -->
+    
+            </div> <!-- end s-header__search -->
+
+            <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+            <a class="s-header__search-trigger" href="#">
+                <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.25 19.25L15.5 15.5M4.75 11C4.75 7.54822 7.54822 4.75 11 4.75C14.4518 4.75 17.25 7.54822 17.25 11C17.25 14.4518 14.4518 17.25 11 17.25C7.54822 17.25 4.75 14.4518 4.75 11Z"></path>
+                </svg>
+            </a>
+
+        </header> <!-- end s-header -->
+
+
+        <!-- # site-content
+        ================================================== -->
+        <section id="content" class="s-content">
+
+
+            <!-- pageheader -->
+            <div class="s-pageheader">
+                <div class="row">
+                    <div class="column large-12">
+                        <h1 class="page-title">
+                            <span class="page-title__small-type">Sohith's</span>
+                            Gallery
+                        </h1>
+                    </div>
+                </div>
+            </div> <!-- end s-pageheader-->
+
+
+            <!--  masonry -->
+            <div id="bricks" class="bricks">
+
+                <div class="masonry">
+
+                    <div class="bricks-wrapper" data-animate-block>
+
+                        <div class="grid-sizer"></div>
+
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#1" class="thumb-link">
+                                    <img src="RahulDito_P.jpg" alt="1">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Concert-Photography</a>
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title"><a href="https://www.instagram.com/rahul_dito/?hl=en">Rahul Dito</a></h1>
+                                 </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                        The kingpin of Kannada Rap, Rahul Dit-O has created a following for himself since his first release Thago. He later gained popularity with a tribute song to the KGF movie. His most release Rocky Bhai has trended on YouTube.
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#1">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article -->
+
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#2" class="thumb-link">
+                                    <img src="deepkalsi_p.jpg" 
+                                         alt="2">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Concert-Photography</a>
+                                        </span>
+                                        <span class="post-date">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title"><a href="https://www.instagram.com/deepkalsimusic/?hl=en">Deep Kalsi</a></h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                        Gagandeep Singh, better known by his stage name Deep Kalsi, is an Indian singer, music producer, and songwriter who is currently based in New Delhi, India.
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                            
+                        
+                        </article> <!-- end article -->
+
+                        <article class="brick entry" data-animate-el>
+            
+                            <div class="entry__thumb">
+                                <a href="#3" class="thumb-link">
+                                    <img src="guitarrockred_P.jpg" 
+                                        alt="3">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+            
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Concert-Photography</a>
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title">A Hungry Guitarist</h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                        High energies with raw power and passion. 
+                                        Bathed in striking red and black hues, his intense performance radiates through every strum, setting the night on fire. 
+                                        The dynamic colors mirror his fervent spirit, creating a visual symphony of rock and rebellion.
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                            
+                        </article> <!-- end article -->
+
+                        <article class="brick entry" data-animate-el>
+            
+                            <div class="entry__thumb">
+                                <a href="#4" class="thumb-link">
+                                    <img src="oldman_p.jpg" 
+                                         alt="4">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+            
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Lifestyle</a>
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title">What Minimalism Really Looks Like.</a></h1>
+                                 </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                        An old man sits quietly, his weathered face etched with the stories of a lifetime. 
+                                        His eyes, deep and contemplative, reflect the wisdom and experiences of years gone by. 
+                                        Every line and wrinkle tells a tale of joys, struggles, and countless memories, portraying a life well-lived.
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+            
+                        </article> <!-- end entry -->
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#5" class="thumb-link">
+                                    <img src="bwguitar_p.jpg" 
+                                         alt="5">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Photography</a> 
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title">Black And White Photography</h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>In this striking black and white photograph, a passionate guitarist commands the spotlight. 
+                                        The monochromatic tones highlight his intensity, capturing every detail of his fervent performance. Shadows and light reveal his deep connection to the music, emphasizing raw emotion and energy. 
+                                        This timeless image resonates with the soul of rock and roll.</p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article -->                            
+
+
+        
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#6" class="thumb-link">
+                                    <img src="dhvanitrio_p.jpg" 
+                                         alt="6">
+                                </a>
+                            </div>  <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Concert-Photography</a>
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title"><a href="https://www.instagram.com/dhvanibhanushali22/?hl=en">Dhvani Bhanushali
+                                    </a></h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                        Dhvani Bhanushali is an Indian pop singer. Born in Mumbai, she gained popularity with her single Vaaste in 2019 which has crossed 1.5 billion views on YouTube, making her the youngest and fastest Indian pop star to hit 1 billion views on YouTube.
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article -->
+
+                        
+
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#7" class="thumb-link">
+                                    <img src="panipuri_p.jpg" 
+                                        alt="7">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Food</a> 
+                                            <a href="#">Lifestyle</a> 
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title">PaniPuri Heritage</a></h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                        Life is better with a side of golgappas. You melt my heart like a spicy golgappa.
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article -->
+        
+                        <article class="brick entry" data-animate-el>
+                
+                            <div class="entry__thumb">
+                                <a href="#8" class="thumb-link">
+                                    <img src="greyheron_p.jpg" 
+                                        alt="8">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+                
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">WildLife</a>
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title">Grey Heron</h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                        A long-legged wading bird of the heron family, Ardeidae, native throughout temperate Europe and Asia, and also parts of Africa.at occaecati voluptas.
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                                
+                        </article> <!-- end article -->
+        
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#9" class="thumb-link">
+                                    <img src="stilt_p.jpg" 
+                                         alt="9">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">WildLife</a>
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title">Black Winged Stilt</h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                        Widely distributed, very long-legged wader in the avocet and stilt family Recurvirostridae.
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article -->
+        
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#10" class="thumb-link">
+                                    <img src="dhvani1_p.jpg" 
+                                         alt="10">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Concert-Photography</a>
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title">Vibriance</h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                    Illuminated against a vibrant backdrop of lights, creating a dynamic and energetic atmosphere. 
+                                    The warm hues cast a glowing aura around the performer, enhancing their presence on stage and highlighting their passionate expression, 
+                                    making the performance visually captivating and full of life.
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article -->
+
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#11" class="thumb-link">
+                                    <img src="swagguitar_p.jpg" 
+                                         alt="11">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Photography</a>
+                                            
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title">Swag Effectively.</a></h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                    
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article -->
+
+                        
+
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#12" class="thumb-link">
+                                    <img src="kids_p.jpg" 
+                                         alt="12">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Lifestyle</a>
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title"></a>Kidos Euphoria</h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                    Cute kids curious about Life, Exploring happiness.
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article -->
+
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#13" class="thumb-link">
+                                    <img src="yellowbasketball_p.jpg" 
+                                         alt="13">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Photography</a> 
+                                            <a href="#">Lifestyle</a> 
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title">Hooping</h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                    
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article -->
+
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#14" class="thumb-link">
+                                    <img src="krishnan_p.jpg" 
+                                         alt="14">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Candid</a> 
+                                            <a href="#">Photography</a> 
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title">Embrace Spirituality</a></h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                        So the story behind the picture would mesmerize, The Guruji was Reciting Bhajan and was chanting Ram Naam, Him lost in the Melody with Soft Tears in his Eyes. Guruji Slowly looked up feeling the divine presence, As if the god was looking at him. I'm glad I captured this Beautiful Moment and I feel blessed I clicked this Picture...
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article -->
+
+ 
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#15" class="thumb-link">
+                                    <img src="deepkaslibw_p.jpg" 
+                                         alt="15">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Photography</a> 
+                                            <a href="#">B&W</a> 
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title"><a href="https://www.instagram.com/deepkalsimusic/?hl=en">Deep Kalsi</a></h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                    
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article -->                            
+
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#16" class="thumb-link">
+                                    <img src="stallpanipuri_p.jpg" 
+                                         alt="16">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Photography</a> 
+                                            <a href="#">Lifestyle</a> 
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title">Cravings</a></h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                        A vibrant Pani Puri food stall bustling with activity, offers a feast for the senses. 
+                                        The crisp, golden puris are ready to be filled with tangy, spicy water, savory potatoes, and chickpeas creating a symphony of flavors that brings joy
+                                        The aroma of fresh ingredients and the lively atmosphere make this stall a beloved local treasure.
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article -->
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#17" class="thumb-link">
+                                    <img src="dhvanissway_p.jpg" 
+                                         alt="17">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Photography</a> 
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title"><a href="https://www.instagram.com/dhvanibhanushali22/?hl=en">Classy Dhvani</a></h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                    The Hotness and the Swayy
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article -->                        
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#18" class="thumb-link">
+                                    <img src="umbrella_p.jpg" 
+                                         alt="18">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Photography</a> 
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title">Under a vibrant canopy</h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                        Amidst the downpour, a person strolls gracefully, shielded by a vibrant canopy of colors. The colorful umbrella not only offers protection but also adds a splash of joy to the rainy day, turning a dreary scene into a picturesque moment of beauty and resilience.
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article --> 
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#19" class="thumb-link">
+                                    <img src="quake_bw.jpg" 
+                                         alt="19">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Photography</a> 
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title"><a href="https://www.instagram.com/quakealltheway/">Quake All The Way</a></h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                        Who goes by the stage name Quake, is keen on making it as a rapper with his own style that includes a bit of pop music.
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article -->                         
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#20" class="thumb-link">
+                                    <img src="singdhvani_p.jpg" 
+                                         alt="20">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Photography</a> 
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title"><a href="https://www.instagram.com/dhvanibhanushali22/?hl=en">Dhvani Bhanushali</a></h1
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                    
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article --> 
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#21" class="thumb-link">
+                                    <img src="flower_p.jpg" 
+                                         alt="21">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Photography</a> 
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title">Black And White Photography</a></h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                    The Journey Of Photo begins with this.
+                                    Taken in Mobile
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article --> 
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#22" class="thumb-link">
+                                    <img src="poster_p.jpg" 
+                                         alt="22">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Photography</a> 
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title">Dreams About to Hang on a Wall</a></h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                        A stunning wall poster of a Porsche captures the essence of speed and luxury. 
+                                        The sleek lines and iconic design of the car are showcased in high detail, evoking a sense of power and elegance. Perfect for car enthusiasts, 
+                                        making it an eye-catching addition to any room.
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article --> 
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#23" class="thumb-link">
+                                    <img src="trioguitar_p.jpg" 
+                                         alt="23">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Photography</a> 
+                                            <a href="#">Candid</a> 
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title">The BAND united</a></h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                    
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article --> 
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#24" class="thumb-link">
+                                    <img src="dancedhvani_p.jpg" 
+                                         alt="24">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Photography</a> 
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title">Vaaste</a></h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                    
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article --> 
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#25" class="thumb-link">
+                                    <img src="adithya_p.jpg" 
+                                         alt="25">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Photography</a> 
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title"><a href="https://www.instagram.com/thatadityaraj/">That Adithya Raj!</a></h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                    Hip Hip Hurayy!!
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article --> 
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#26" class="thumb-link">
+                                    <img src="bike_p.jpg" 
+                                         alt="26">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Photography</a> 
+                                            <a href="#">Lifestyle</a> 
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title">Cruising Down</h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                  Shifting Gears to get on your level.
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article --> 
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#27" class="thumb-link">
+                                    <img src="hand_p.jpg" 
+                                         alt="27">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Photography</a> 
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title">The Highly Contrasted</h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                    
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article --> 
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#28" class="thumb-link">
+                                    <img src="juicestal_p.jpg" 
+                                         alt="28">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Photography</a> 
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title">A Stop for Sharbath</h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>Fizzy beverage that combines the traditional flavors of aromatic sherbet with a sparkling twist. Often enjoyed in vibrant, 
+                                        fruity flavors like rose, mint, or lemon, this drink is served chilled and offers a delightful balance of sweetness and effervescence. 
+                                        Perfect for cooling down on a hot day or adding a touch of excitement to any gatherings.</p>
+                                    
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article -->        
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#29" class="thumb-link">
+                                    <img src="dj_p.jpg" 
+                                         alt="29">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Photography</a> 
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title">Disk Jockey</h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                   
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article -->  
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#30" class="thumb-link">
+                                    <img src="bkuedhvani_p.JPG" 
+                                         alt="30">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Photography</a> 
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title"><a href="https://www.instagram.com/dhvanibhanushali22/?hl=en">Dhvani Bhanushali</a></h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                    
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article -->  
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#31" class="thumb-link">
+                                    <img src="kalsi_p.jpg" 
+                                         alt="31">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Photography</a> 
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title"><a href="https://www.instagram.com/deepkalsimusic/?hl=en">Wait! - Deep Kalsi</a></h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                    
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article -->  
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#32" class="thumb-link">
+                                    <img src="hotelguitar_p.jpg" 
+                                         alt="32">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Photography</a> 
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title">Hotel California</a></h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                        A guitarist passionately plays "Hotel California," effortlessly bringing the iconic melody and intricate solos to life. 
+                                        The performance captures the song's haunting allure and timeless charm, creating a memorable musical experience.
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article -->  
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#33" class="thumb-link">
+                                    <img src="stagebw_p.jpg" 
+                                         alt="33">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Photography</a> 
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title"><a href="single-standard.html">Paaji and Raftaar</a></h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                    
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article --> 
+
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#34" class="thumb-link">
+                                    <img src="classicdance_p.jpg" 
+                                         alt="34">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Photography</a> 
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title">Yakshagana </a></h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                        A traditional folk dance form popular in Coastal Karnataka districts. A trip to the coastal belt would be incomplete without watching the Yakshagana
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article -->                        
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#35" class="thumb-link">
+                                    <img src="leaves_p.jpg" 
+                                         alt="35">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Photography</a> 
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title">Flowers you can keep looking</a></h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                        Bougainvillea glabra, the lesser bougainvillea or paperflower, is the most common species of bougainvillea used for bonsai.
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article -->  
+
+
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#36" class="thumb-link">
+                                    <img src="ola_p.jpg" 
+                                         alt="36">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Photography</a> 
+                                            <a href="#">Lifestyle</a> 
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title">Ridin in the Rain</h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                        A person rides through the rain, with another holding an umbrella behind them. The rain adds a sense of adventure to their journey, 
+                                        as they navigate the wet streets together. 
+                                        The umbrella provides a splash of color and a sense of camaraderie in the rainy scene.
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article --> 
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#37" class="thumb-link">
+                                    <img src="rahulditostand_p.jpg" 
+                                         alt="37">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Photography</a> 
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title"><a href="https://www.instagram.com/rahul_dito/?hl=en">Rahul Dito</a></h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                          
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article --> 
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#38" class="thumb-link">
+                                    <img src="fire_p.jpg" 
+                                         alt="38">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">Food</a> 
+                                            <a href="#">Photography</a> 
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title">High on Flames</a></h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                    Roasted, Spice on the lips.A chicken roasts vigorously over an open flame, enveloped in a dramatic burst of fiery heat. 
+                                    Creating a tantalizing char and a mesmerizing display of sizzling action. The rich, golden-brown skin, crisped by the flames, promises a mouthwatering feast full of smoky flavor and succulent tenderness.
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article --> 
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#39" class="thumb-link">
+                                    <img src="crane_p.jpg" 
+                                         alt="39">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            <a href="#">WildLife</a> 
+                                            <a href="#">Photography</a> 
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title">Casual Walks</h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                        A graceful grey heron strides purposefully through the serene waters of a lake, its long legs delicately navigating the shallows as it searches for its next meal.
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article --> 
+                                                </article> <!-- end article --> 
+                        <article class="brick entry" data-animate-el>
+        
+                            <div class="entry__thumb">
+                                <a href="#40" class="thumb-link">
+                                    <img src="piano_p.JPG" 
+                                         alt="40">
+                                </a>
+                            </div> <!-- end entry__thumb -->
+        
+                            <div class="entry__text">
+                                <div class="entry__header">
+                                    <div class="entry__meta">
+                                        <span class="cat-links">
+                                            
+                                            <a href="#">Photography</a> 
+                                        </span>
+                                        <span class="byline">
+                                            By:
+                                            <a href="#0">Sohith Narnavaram</a>
+                                        </span>
+                                    </div>
+                                    <h1 class="entry__title">Pioanology</h1>
+                                </div>
+                                <div class="entry__excerpt">
+                                    <p>
+                                        With its elegant ebony and ivory keys, has long held a special place in the world of  music.
+                                    </p>
+                                </div>
+                                <a class="entry__more-link" href="#0">Read More</a>
+                            </div> <!-- end entry__text -->
+                        
+                        </article> <!-- end article -->
+                    </article> <!-- end article --> 
+                    <article class="brick entry" data-animate-el>
+    
+                        <div class="entry__thumb">
+                            <a href="#41" class="thumb-link">
+                                <img src="dog_p.jpg" 
+                                     alt="41">
+                            </a>
+                        </div> <!-- end entry__thumb -->
+    
+                        <div class="entry__text">
+                            <div class="entry__header">
+                                <div class="entry__meta">
+                                    <span class="cat-links">
+                                        <a href="#">Photography</a> 
+                                    </span>
+                                    <span class="byline">
+                                        By:
+                                        <a href="#0">Sohith Narnavaram</a>
+                                    </span>
+                                </div>
+                                <h1 class="entry__title">Best Friend</h1>
+                            </div>
+                            <div class="entry__excerpt">
+                                <p>
+                                    A cute white dog with soulful eyes roams around, looking sad and longing for a friend. Its fluffy fur is slightly ruffled, and its ears perk up at every sound, hoping to find a companion to share its adventures and bring a wag back to its tail.
+                                </p>
+                            </div>
+                            <a class="entry__more-link" href="#0">Read More</a>
+                        </div> <!-- end entry__text -->
+                    
+                    </article> <!-- end article -->               
+                    <article class="brick entry" data-animate-el>
+    
+                        <div class="entry__thumb">
+                            <a href="#42" class="thumb-link">
+                                <img src="dhvanipink_p.jpg" 
+                                     alt="42">
+                            </a>
+                        </div> <!-- end entry__thumb -->
+    
+                        <div class="entry__text">
+                            <div class="entry__header">
+                                <div class="entry__meta">
+                                    <span class="cat-links">
+                                        <a href="#">Photography</a> 
+                                    </span>
+                                    <span class="byline">
+                                        By:
+                                        <a href="#0">Sohith Narnavaram</a>
+                                    </span>
+                                </div>
+                                <h1 class="entry__title">Moves with Style</h1>
+                            </div>
+                            <div class="entry__excerpt">
+                                <p>
+                                
+                                </p>
+                            </div>
+                            <a class="entry__more-link" href="#0">Read More</a>
+                        </div> <!-- end entry__text -->
+                    
+                    </article> <!-- end article -->
+                    <article class="brick entry" data-animate-el>
+    
+                        <div class="entry__thumb">
+                            <a href="#43" class="thumb-link">
+                                <img src="alan_p.JPG" 
+                                     alt="43">
+                            </a>
+                        </div> <!-- end entry__thumb -->
+    
+                        <div class="entry__text">
+                            <div class="entry__header">
+                                <div class="entry__meta">
+                                    <span class="cat-links">
+                                        <a href="#">Photography</a> 
+                                    </span>
+                                    <span class="byline">
+                                        By:
+                                        <a href="#0">Sohith Narnavaram</a>
+                                    </span>
+                                </div>
+                                <h1 class="entry__title">Got-Em</h1>
+                            </div>
+                            <div class="entry__excerpt">
+                                <p>
+                                
+                                </p>
+                            </div>
+                            <a class="entry__more-link" href="#0">Read More</a>
+                        </div> <!-- end entry__text -->
+                    
+                    </article> <!-- end article -->
+                    <article class="brick entry" data-animate-el>
+    
+                        <div class="entry__thumb">
+                            <a href="#44" class="thumb-link">
+                                <img src="nikith_p.jpg" 
+                                     alt="44">
+                            </a>
+                        </div> <!-- end entry__thumb -->
+    
+                        <div class="entry__text">
+                            <div class="entry__header">
+                                <div class="entry__meta">
+                                    <span class="cat-links">
+                                        <a href="#">Candid</a> 
+                                        <a href="#">Photography</a> 
+                                    </span>
+                                    <span class="byline">
+                                        By:
+                                        <a href="#0">Sohith Narnavaram</a>
+                                    </span>
+                                </div>
+                                <h1 class="entry__title"><a href="https://www.instagram.com/_lil_n.i.k/">Lil NiK - Rapper
+                                </a></h1>
+                            </div>
+                            <div class="entry__excerpt">
+                                <p>
+                                    Artist from Bengaluru. Rap is an artistic form of vocal delivery and emotive expression that incorporates rhythmic speech,
+                                    time passed it has become the biggest music in the world and Indian hip hop making a bench mark in the industry.
+                                </p>
+                            </div>
+                            <a class="entry__more-link" href="#0">Read More</a>
+                        </div> <!-- end entry__text -->
+                    
+                    </article> <!-- end article -->
+                    <article class="brick entry" data-animate-el>
+    
+                        <div class="entry__thumb">
+                            <a href="#45" class="thumb-link">
+                                <img src="deepkalsistage_p.jpg" 
+                                     alt="45">
+                            </a>
+                        </div> <!-- end entry__thumb -->
+    
+                        <div class="entry__text">
+                            <div class="entry__header">
+                                <div class="entry__meta">
+                                    <span class="cat-links">
+                                        <a href="#">Photography</a> 
+                                    </span>
+                                    <span class="byline">
+                                        By:
+                                        <a href="#0">Sohith Narnavaram</a>
+                                    </span>
+                                </div>
+                                <h1 class="entry__title"><a href="https://www.instagram.com/deepkalsimusic/?hl=en">Deep Kalsi Owning The Stage</a></h1>
+                            </div>
+                            <div class="entry__excerpt">
+                                <p>
+                                Performance at The peaks.
+                                </p>
+                            </div>
+                            <a class="entry__more-link" href="#0">Read More</a>
+                        </div> <!-- end entry__text -->
+                    
+                    </article> <!-- end article -->    
+                    <article class="brick entry" data-animate-el>
+    
+                        <div class="entry__thumb">
+                            <a href="#46" class="thumb-link">
+                                <img src="headphones_p.jpg" 
+                                     alt="46">
+                            </a>
+                        </div> <!-- end entry__thumb -->
+    
+                        <div class="entry__text">
+                            <div class="entry__header">
+                                <div class="entry__meta">
+                                    <span class="cat-links">
+                                        <a href="#">B&W</a> 
+                                        <a href="#">Photography</a> 
+                                    </span>
+                                    <span class="byline">
+                                        By:
+                                        <a href="#0">Sohith Narnavaram</a>
+                                    </span>
+                                </div>
+                                <h1 class="entry__title">Play no Pause</h1>
+                            </div>
+                            <div class="entry__excerpt">
+                                <p>
+                                    Life sounds better with headphones on. Plug in, tune out, and enjoy the beats.
+                                </p>
+                            </div>
+                            <a class="entry__more-link" href="#0">Read More</a>
+                        </div> <!-- end entry__text -->
+                    
+                    </article> <!-- end article --> 
+                    <article class="brick entry" data-animate-el>
+    
+                        <div class="entry__thumb">
+                            <a href="#47" class="thumb-link">
+                                <img src="pinkbasketball_p.jpg" 
+                                     alt="47">
+                            </a>
+                        </div> <!-- end entry__thumb -->
+    
+                        <div class="entry__text">
+                            <div class="entry__header">
+                                <div class="entry__meta">
+                                    <span class="cat-links">
+                                        <a href="#">Photography</a> 
+                                    </span>
+                                    <span class="byline">
+                                        By:
+                                        <a href="#0">Sohith Narnavaram</a>
+                                    </span>
+                                </div>
+                                <h1 class="entry__title">Every play is a chance for glory</h1>
+                            </div>
+                            <div class="entry__excerpt">
+                                <p>
+                                    The pink sky reflects nature's gentle embrace and unwavering beauty and the hoop Cheering at the top of my lungs! Let's do this!
+                                </p>
+                            </div>
+                            <a class="entry__more-link" href="#0">Read More</a>
+                        </div> <!-- end entry__text -->
+                    
+                    </article> <!-- end article --> 
+<article class="brick entry" data-animate-el>
+    
+                        <div class="entry__thumb">
+                            <a href="#48" class="thumb-link">
+                                <img src="snigda_p.jpg" 
+                                     alt="48">
+                            </a>
+                        </div> <!-- end entry__thumb -->
+    
+                        <div class="entry__text">
+                            <div class="entry__header">
+                                <div class="entry__meta">
+                                    <span class="cat-links">
+                                        <a href="#">Potrait</a> 
+                                        <a href="#">Photography</a> 
+                                    </span>
+                                    <span class="byline">
+                                        By:
+                                        <a href="#0">Sohith Narnavaram</a>
+                                    </span>
+                                </div>
+                                <h1 class="entry__title">Potraits and Candids</h1>
+                            </div>
+                            <div class="entry__excerpt">
+                                <p>
+                                    In a black and white frame, A smile paints the room with warmth.
+                                </p>
+                            </div>
+                            <a class="entry__more-link" href="#0">Read More</a>
+                        </div> <!-- end entry__text -->
+                    
+                    </article> <!-- end article -->    
+                    <article class="brick entry" data-animate-el>
+    
+                        <div class="entry__thumb">
+                            <a href="#49" class="thumb-link">
+                                <img src="haashim_P.jpg" 
+                                     alt="49">
+                            </a>
+                        </div> <!-- end entry__thumb -->
+    
+                        <div class="entry__text">
+                            <div class="entry__header">
+                                <div class="entry__meta">
+                                    <span class="cat-links">
+                                        <a href="#">Potrait</a> 
+                                        <a href="#">Photography</a> 
+                                    </span>
+                                    <span class="byline">
+                                        By:
+                                        <a href="#0">Sohith Narnavaram</a>
+                                    </span>
+                                </div>
+                                <h1 class="entry__title">Potraits and Candids</h1>
+                            </div>
+                            <div class="entry__excerpt">
+                                <p>
+                                    Travelling and Exploring.
+                                </p>
+                            </div>
+                            <a class="entry__more-link" href="#0">Read More</a>
+                        </div> <!-- end entry__text -->
+                    
+                    </article> <!-- end article -->      
+                </article> <!-- end article -->    
+                <article class="brick entry" data-animate-el>
+
+                    <div class="entry__thumb">
+                        <a href="#50" class="thumb-link">
+                            <img src="classicdancetrio_p.jpg" 
+                                 alt="50">
+                        </a>
+                    </div> <!-- end entry__thumb -->
+
+                    <div class="entry__text">
+                        <div class="entry__header">
+                            <div class="entry__meta">
+                                <span class="cat-links">
+                                    <a href="#">Photography</a> 
+                                    <a href="#">Lifestyle</a> 
+                                </span>
+                                <span class="byline">
+                                    By:
+                                    <a href="#0">Sohith Narnavaram</a>
+                                </span>
+                            </div>
+                            <h1 class="entry__title">Dance Forms</h1>
+                        </div>
+                        <div class="entry__excerpt">
+                            <p>
+                                Art form developed in Dakshina Kannada, Udupi, Uttara Kannada, Shimoga and western parts of Chikmagalur districts, in the state of Karnataka and in Kasaragod district in Kerala that combines dance, music, dialogue, costume, make-up, and stage techniques with a unique style and form.
+                            </p>
+                        </div>
+                        <a class="entry__more-link" href="#0">Read More</a>
+                    </div> <!-- end entry__text -->
+                
+                </article> <!-- end article --> 
+            
+            <article class="brick entry" data-animate-el>
+
+                <div class="entry__thumb">
+                    <a href="#51" class="thumb-link">
+                        <img src="tshirt_p.jpg" 
+                             alt="51">
+                    </a>
+                </div> <!-- end entry__thumb -->
+
+                <div class="entry__text">
+                    <div class="entry__header">
+                        <div class="entry__meta">
+                            <span class="cat-links">
+                                <a href="#">B&W</a> 
+                                <a href="#">Photography</a> 
+                            </span>
+                            <span class="byline">
+                                By:
+                                <a href="#0">Sohith Narnavaram</a>
+                            </span>
+                        </div>
+                        <h1 class="entry__title">Black And White Photography</h1>
+                    </div>
+                    <div class="entry__excerpt">
+                        <p>
+                            
+                        </p>
+                    </div>
+                    <a class="entry__more-link" href="#0">Read More</a>
+                </div> <!-- end entry__text -->
+            
+            </article> <!-- end article -->   
+            <article class="brick entry" data-animate-el>
+
+                <div class="entry__thumb">
+                    <a href="#52" class="thumb-link">
+                        <img src="eman_p.jpg" 
+                             alt="52">
+                    </a>
+                </div> <!-- end entry__thumb -->
+
+                <div class="entry__text">
+                    <div class="entry__header">
+                        <div class="entry__meta">
+                            <span class="cat-links">
+                                <a href="#">Potrait</a> 
+                                <a href="#">Photography</a> 
+                            </span>
+                            <span class="byline">
+                                By:
+                                <a href="#0">Sohith Narnavaram</a>
+                            </span>
+                        </div>
+                        <h1 class="entry__title">Potraits and Candids</h1>
+                    </div>
+                    <div class="entry__excerpt">
+                        <p>
+                            
+                        </p>
+                    </div>
+                    <a class="entry__more-link" href="#0">Read More</a>
+                </article> <!-- end article -->   
+                <article class="brick entry" data-animate-el>
+    
+                    <div class="entry__thumb">
+                        <a href="#53" class="thumb-link">
+                            <img src="treeflower_p.jpg" 
+                                 alt="53">
+                        </a>
+                    </div> <!-- end entry__thumb -->
+    
+                    <div class="entry__text">
+                        <div class="entry__header">
+                            <div class="entry__meta">
+                                <span class="cat-links">
+                                    <a href="#">Photography</a> 
+                                </span>
+                                <span class="byline">
+                                    By:
+                                    <a href="#0">Sohith Narnavaram</a>
+                                </span>
+                            </div>
+                            <h1 class="entry__title">Living</h1>
+                        </div>
+                        <div class="entry__excerpt">
+                            <p>
+                                
+                            </p>
+                        </div>
+                        <a class="entry__more-link" href="#0">Read More</a>                    
+                </div> <!-- end entry__text -->
+            
+            </article> <!-- end article -->                                                                                                                                                                                       
+                    </div> <!-- end bricks-wrapper -->
+                    
+
+                </div> <!-- end masonry-->
+
+
+                <!-- pagination -->
+                <div class="row pagination">
+                    <div class="column lg-12">
+                        <nav class="pgn">
+                            <ul>
+                                <li>
+                                    <a class="pgn__prev" href="#0">
+                                        <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.25 6.75L4.75 12L10.25 17.25"></path>
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.25 12H5"></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li><a class="pgn__num current">1</a></li>
+                                <li><span class="pgn__num" href="#0">2</span></li>
+                                <li><a class="pgn__num" href="#0">3</a></li>
+                                <li><a class="pgn__num" href="#0">4</a></li>
+                                <li><a class="pgn__num" href="#0">5</a></li>
+                                <li><span class="pgn__num dots">…</span></li>
+                                <li><a class="pgn__num" href="#0">8</a></li>
+                                <li>
+                                    <a class="pgn__next" href="#0">
+                                        <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.75 6.75L19.25 12L13.75 17.25"></path>
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 12H4.75"></path>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav> <!-- end pgn -->
+                    </div> <!-- end column -->
+                </div> <!-- end pagination -->
+
+            </div> <!-- end bricks -->
+
+        </section> <!-- end s-content -->
+
+
+
+        <!-- # site-footer
+        ================================================== -->
+        <footer id="colophon" class="s-footer">
+
+            <div class="row s-footer__subscribe">
+                <div class="column lg-12">
+
+                    <h2>
+                    Hope you had a great Tour around!...
+                    </h2>
+                    <p>
+                    Subscribe now to get all latest updates
+                    </p>
+
+                    <form id="mc-form" class="mc-form">
+                        <input type="email" name="EMAIL" id="mce-EMAIL" class="u-fullwidth text-center" placeholder="Your Email Address" title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required>
+                        <input type="submit" name="subscribe" value="Subscribe" class="btn--small btn--primary u-fullwidth">
+                        <!-- <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cdb7b577e41181934ed6a6a44_9a91cfe7b3" tabindex="-1" value=""></div> -->
+                        <div class="mc-status"></div>
+                    </form>
+
+                </div>
+            </div> <!-- end s-footer__subscribe -->
+
+            <div class="row s-footer__main">
+
+                <div class="column lg-5 md-6 tab-12 s-footer__about">
+                    <h4>Sohith Narnavaram</h4>
+
+                    <p>
+                        For me, photography isn’t just a hobby , it’s an adventure! It’s like having a superpower to freeze time and share my unique view of the world. 
+                        Every snap is a chance to amaze and capture life’s fun, fabulous, and fascinating moments. 
+                        Photography is my jam, blending creativity with a touch of magic!  
+                    </p>
+                </div> <!-- end s-footer__about -->
+
+                <div class="column lg-5 md-6 tab-12">
+                    <div class="row">
+                        <div class="column lg-6">
+                            <h4>Photo Categories</h4>
+                            <ul class="link-list">
+                                <li><a href="category.html">Concert</a> </li>
+                                <li><a href="category.html">Lifestyle</a> </li>
+                                <li><a href="category.html">Potrait</a> </li>
+                                <li><a href="category.html">WildLife</a> </li>
+                                <li><a href="category.html">Candid</a> </li>
+                                <li><a href="category.html">Food</a> </li>
+                                <li><a href="category.html">Monochromatic</a></li>
+                            </ul>
+                        </div>
+                        <div class="column lg-5 md-6 tab-12">
+                            <div class="row">
+                                
+                                </div>
+                                <div class="column lg-6">
+                                    <h4>Site Links</h4>
+                                    <ul class="link-list">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="category.html">Gallery</a></li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="about.html">Contact</a></li>
+                                        <li><a href="#0">Terms&Policy</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+            </div> <!-- end s-footer__main -->
+
+            <div class="row s-footer__bottom">
+
+                <div class="column lg-7 md-6 tab-12">
+                    <ul class="s-footer__social">
+                        <li>
+                            <a href="mailto:sohithnr29@gmail.com"><img src="icons8-email-50.png" alt="" width="50">
+                                <span class="u-screen-reader-text">Email</span>
+                            </a>
+                        </li>
+                        <li>
+                               <a href="https://www.instagram.com/sohithnarnavaram/"><img src="icons8-instagram-64.png" alt="" width="50">
+                                <span class="u-screen-reader-text">Instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/sohith-narnavaram-89904224b/"><img src="icons8-linkedin-50.png" alt="" width="48">
+                                <span class="u-screen-reader-text">LinkedIn</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://pin.it/5t4OifMem"><img src="icons8-pinterest-50.png" alt="" width="45">
+                                <span class="u-screen-reader-text">Pinterest</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column lg-5 md-6 tab-12">
+                    <div class="ss-copyright">
+                        <span>© Copyright Sohith Narnavaram | Portfolio 2024</span> 
+                        <span>Design by <a href="https://www.instagram.com/sohithnarnavaram/">Sohith Narnavaram</a></span>
+                    </div>
+                </div>
+
+            </div> <!-- end s-footer__bottom -->
+           
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">
+                    <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 10.25L12 4.75L6.75 10.25"/>
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 19.25V5.75"/>
+                    </svg>
+                </a>
+            </div> <!-- end ss-go-top -->
+
+        </footer><!-- end s-footer -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
