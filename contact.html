@@ -7,6 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact - Sohith Narnavaram</title>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
     <script>
         document.documentElement.classList.remove('no-js');
@@ -46,8 +47,6 @@
     <div id="page" class="s-pagewrap">
 
 
-        <!-- # site header 
-        ================================================== -->
         <header id="masthead" class="s-header">
 
             <div class="s-header__branding">
@@ -63,21 +62,24 @@
                     <h3 class="s-header__nav-heading">Navigate to</h3>
     
                     <ul class="s-header__nav">
-                        <li><a href="index.html" title="">Home</a></li>
+                        <li ><a href="index.html" title="">Home</a></li>
                         <li class="has-children">
                             <a href="#0" title="" class="">Categories</a>
                             <ul class="sub-menu">
-                                <li><a href="category.html">Design</a></li>
-                                <li><a href="category.html">Lifestyle</a></li>
-                                <li><a href="category.html">Inspiration</a></li>
-                                <li><a href="category.html">Work</a></li>
-                                <li><a href="category.html">Health</a></li>
-                                <li><a href="category.html">Photography</a></li>
+                                <li><a href="#concert">Concert</a></li>
+                                <li><a href="#Lifestyle">Lifestyle</a></li>
+                                <li><a href="#WildLife">WildLife</a></li>
+                                <li><a href="#Potrait">Potrait</a></li>
+                                <li><a href="#Candid">Candid</a></li>
+                                <li><a href="#Food">Food</a></li>
+                                <li><a href="#Monochromatic">Monochromatic</a></li>
                             </ul>
                         </li>
+                        <li class="has-Photographs">
+                            <a href="category.html" title="" class="">Gallery</a>
                         </li>
-                        <li><a href="styles.html" title="">Styles</a></li>
-                        <li><a href="about.html" title="">About</a></li>
+                        <li ><a href="styles.html" title="">Styles</a></li>
+                        <li ><a href="about.html" title="">About</a></li>
                         <li class="current-menu-item"><a href="contact.html" title="">Contact</a></li>
                     </ul> <!-- end s-header__nav -->
 
@@ -163,7 +165,7 @@
                                             Instagram Handles<a href="https://www.instagram.com/sohithnarnavaram/"><br><img src="icons8-instagram.gif" alt="" width="65"></a><br></div>
                                             <div>
                                             LinkedIn Handles<a href="https://www.linkedin.com/in/sohith-narnavaram-89904224b/"><br><img src="icons8-linkedin.gif" alt="" width="60"></a><br> 
-                                            Whatsapp<a href="tel:7337728776"><br><img src="icons8-whatsapp.gif" alt="" width="60"></a><br> </div>
+                                            Whatsapp<a href="https://api.whatsapp.com/send?phone=+91-7337728776&text=Hello"><br><img src="icons8-whatsapp.gif" alt="" width="60"></a><br> </div>
                                             <div>
                                                 <p>Phone: +91 7337728776</p>
                                                 </div>
@@ -174,32 +176,84 @@
                                     </div>
 
                                     <h4>Feel Free to Say Hi.</h4>
-
-                                    <form name="cForm" id="cForm" class="entry__form" method="post" action="" autocomplete="off">
+                                    <form id="cForm" class="entry__form" method="post" action="" autocomplete="off">
                                         <fieldset class="row">
-
                                             <div class="column lg-6 tab-12 form-field">
-                                                <input name="cName" id="cName" class="u-fullwidth" placeholder="Your Name" value="" type="text">
+                                                <input name="cName" id="cName" class="u-fullwidth" placeholder="Your Name" value="" type="text" required>
                                             </div>
-
+                                
                                             <div class="column lg-6 tab-12 form-field">
-                                                <input name="cEmail" id="cEmail" class="u-fullwidth" placeholder="Your Email" value="" type="text">
+                                                <input name="cEmail" id="cEmail" class="u-fullwidth" placeholder="Your Email" value="" type="email" required>
                                             </div>
-
+                                
                                             <div class="column lg-12 form-field">
                                                 <input name="cWebsite" id="cWebsite" class="u-fullwidth" placeholder="Website / Company" value="" type="text">
                                             </div>
-
+                                
                                             <div class="column lg-12 message form-field">
-                                                <textarea name="cMessage" id="cMessage" class="u-fullwidth" placeholder="Your Message"></textarea>
+                                                <textarea name="cMessage" id="cMessage" class="u-fullwidth" placeholder="Your Message" required></textarea>
                                             </div>
-
+                                
                                             <div class="column lg-12">
-                                                <input name="submit" id="submit" class="btn btn--primary btn-wide btn--large u-fullwidth" value="Add Comment" type="submit">
+                                                <input name="submitEmail" id="submitEmail" class="btn btn--primary btn-wide btn--large u-fullwidth" value="Send via Email" type="button">
+                                                <input name="submitWhatsApp" id="submitWhatsApp" class="btn btn--primary btn-wide btn--large u-fullwidth" value="Send via WhatsApp" type="button">
                                             </div>
-
                                         </fieldset>
-                                    </form> <!-- end form -->
+                                    </form>
+                                
+                                    <script>
+                                        function getFormValues() {
+                                            return {
+                                                name: encodeURIComponent(document.getElementById('cName').value),
+                                                email: encodeURIComponent(document.getElementById('cEmail').value),
+                                                website: encodeURIComponent(document.getElementById('cWebsite').value),
+                                                message: encodeURIComponent(document.getElementById('cMessage').value),
+                                            };
+                                        }
+                                
+                                        function createMailtoURL() {
+                                            const { name, email, website, message } = getFormValues();
+                                            const subject = 'Contact Form Submission';
+                                            const body = `
+                                                Name: ${decodeURIComponent(name)}
+                                                
+                                                Email: ${decodeURIComponent(email)}
+                                                
+                                                Website or Company: ${decodeURIComponent(website)}
+                                                
+                                                Message:
+                                                ${decodeURIComponent(message)}
+                                            `.replace(/\n/g, '%0D%0A'); // Encode line breaks for email
+                                            
+                                            return `mailto:sohithnr29@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+                                        }
+                                
+                                        function createWhatsAppURL() {
+                                            const { name, email, website, message } = getFormValues();
+                                            const text = `
+                                                *Contact Form Submission*
+                                                
+                                                *Name:* ${decodeURIComponent(name)}
+                                                
+                                                *Email:* ${decodeURIComponent(email)}
+                                                
+                                                *Website or Company:* ${decodeURIComponent(website)}
+                                                
+                                                *Message:*
+                                                ${decodeURIComponent(message)}
+                                            `.replace(/\n/g, '%0A'); // Encode line breaks for WhatsApp
+                                
+                                            return `https://api.whatsapp.com/send?phone=+91-7337728776&text=${text}`;
+                                        }
+                                
+                                        document.getElementById('submitEmail').addEventListener('click', function() {
+                                            window.location.href = createMailtoURL();
+                                        });
+                                
+                                        document.getElementById('submitWhatsApp').addEventListener('click', function() {
+                                            window.open(createWhatsAppURL(), '_blank');
+                                        });
+                                    </script> <!-- end form -->
 
                             </div> <!-- end content-primary -->
 
@@ -223,14 +277,6 @@
                     <p>
                         Thrilled to have had the chance to connect with you.
                     </p>
-
-                    <form id="mc-form" class="mc-form">
-                        <input type="email" name="EMAIL" id="mce-EMAIL" class="u-fullwidth text-center" placeholder="Your Email Address" title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required>
-                        <input type="submit" name="subscribe" value="Subscribe" class="btn--small btn--primary u-fullwidth">
-                        <!-- <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cdb7b577e41181934ed6a6a44_9a91cfe7b3" tabindex="-1" value=""></div> -->
-                        <div class="mc-status"></div>
-                    </form>
-
                 </div>
             </div> <!-- end s-footer__subscribe -->
 
@@ -270,7 +316,7 @@
                                         <li><a href="index.html">Home</a></li>
                                         <li><a href="category.html">Gallery</a></li>
                                         <li><a href="about.html">About</a></li>
-                                        <li><a href="about.html">Contact</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
                                         <li><a href="#0">Terms&Policy</a></li>
                                     </ul>
                                 </div>
