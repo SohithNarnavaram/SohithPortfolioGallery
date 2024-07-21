@@ -39,7 +39,10 @@
         <div></div>
         <div></div>
     </div>
-    <p class="loading-message">Hold tight! We’re brewing up something magical. This might take a minute, but it’ll be worth it!</p>
+    <p class="loading-message">
+        <span class="greeting">Hey There!</span><br>
+        Hold tight! We’re brewing up something magical. This might take a minute, but it’ll be worth it!
+    </p>
 </div>
 
 <style>
@@ -71,8 +74,14 @@
     margin-top: 10px; /* Space between the loader and the message */
     color: #070303; /* Adjust the color to fit your design */
     font-size: 16px;
+    text-align: center; /* Center-align the text */
+}
+
+#preloader .greeting {
+    font-weight: bold; /* Make "Hey There!" bold */
 }
 </style>
+
 
 
 
