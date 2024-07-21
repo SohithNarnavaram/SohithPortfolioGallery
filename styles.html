@@ -67,12 +67,13 @@
                         <li class="has-children">
                             <a href="#0" title="" class="">Categories</a>
                             <ul class="sub-menu">
-                                <li><a href="category.html">Concert</a></li>
-                                <li><a href="category.html">Lifestyle</a></li>
-                                <li><a href="category.html">WildLife</a></li>
-                                <li><a href="category.html">Candid</a></li>
-                                <li><a href="category.html">Food</a></li>
-                                <li><a href="category.html">Monochromatic</a></li>
+                                <li><a href="#concert">Concert</a></li>
+                                <li><a href="#Lifestyle">Lifestyle</a></li>
+                                <li><a href="#WildLife">WildLife</a></li>
+                                <li><a href="#Potrait">Potrait</a></li>
+                                <li><a href="#Candid">Candid</a></li>
+                                <li><a href="#Food">Food</a></li>
+                                <li><a href="#Monochromatic">Monochromatic</a></li>
                             </ul>
                         </li>
                         <li class="has-Photographs">
@@ -146,7 +147,7 @@ Photography is an art form that captures moments and tells stories, turning flee
 
                             <div class="row">
 
-                                <div class="column lg-6 tab-12">
+                                <div class="column lg-6 tab-12" id="concert">
                 
                                     <a href="category.html"><h3>Concert Photography</h3></a>
                 
@@ -157,7 +158,7 @@ Photography is an art form that captures moments and tells stories, turning flee
                                         A great concert photo can convey the passion of the performers and the joy of the crowd, creating a visceral connection with the viewer. </p>
                                 </div>
                 
-                                <div class="column lg-6 tab-12">
+                                <div class="column lg-6 tab-12" id="Lifestyle">
                 
                                     <a href="category.html"><h3>Lifestyle Photography</h3></a>
                 
@@ -172,7 +173,7 @@ Photography is an art form that captures moments and tells stories, turning flee
                 
                             <div class="column">
                 
-                                <div class="row lg-6 tab-12">
+                                <div class="row lg-6 tab-12" id="WildLife">
                 
                                     <a href="category.html"><h3 class="u-add-bottom">Wildlife Photography</h3></a>
                 
@@ -184,7 +185,7 @@ Photography is an art form that captures moments and tells stories, turning flee
                                 </div>
 
                                 <div class="column">
-                                    <div class="row lg-6 tab-12">
+                                    <div class="row lg-6 tab-12" id="Food">
                 
                                         <a href="category.html"><h3 class="u-add-bottom">Food Photography</h3></a>
                     
@@ -197,7 +198,7 @@ Photography is an art form that captures moments and tells stories, turning flee
                                 </div>
                                 <div class="row">
                 
-                                    <div class="column lg-6 tab-12">
+                                    <div class="column lg-6 tab-12" id="Monochromatic">
                     
                                         <a href="category.html"><h3> Monochromatic Photography</h3></a>
                     
@@ -205,25 +206,10 @@ Photography is an art form that captures moments and tells stories, turning flee
                                             Monochromatic photography focuses on using varying shades of a single color to create striking images. Often associated with black and white photography, this style emphasizes texture, contrast, and composition. By stripping away the distraction of color, monochromatic photography draws attention to the fundamental elements of the subject. The result is timeless and elegant images that evoke a sense of nostalgia and simplicity. 
                                         </p>
                     
-                                    </div>                                
-                                
-                
-                                <div class="column lg-6 tab-12">
-                
-                                    <a href="category.html"><h3 class="u-add-bottom">Candid Photography</h3></a>
-                
+                                    </div>                 
                                     
-                                        <p class="drop-cap">
-                                            Candid photography captures spontaneous moments as they happen, without posing or staging. 
-                                            It’s about being in the right place at the right time to capture genuine emotions and interactions. This style is often used in street photography, events, and personal projects, where the goal is to document life as it unfolds. 
-                                            Candid photographs are powerful because they capture the raw, unfiltered essence of a moment, providing a glimpse into the true emotions and experiences of the subjects.
-                                        </p>
-                
-                                        <footer>
-                                        </footer>
-                                        </div>
-                <div>
-                                <div class="row lg-6 tab-12">
+                                    
+                                    <div class="column lg-6 tab-12" id="Potrait">
                 
                                     <a href="category.html"><h3 class="u-add-bottom">Potrait Photography</h3></a>
                 
@@ -235,6 +221,21 @@ Photography is an art form that captures moments and tells stories, turning flee
                                         <footer>
                                         </footer>
                                </div>
+                
+                                <div class="column lg-12 tab-6" id="Candid">
+                
+                                    <a href="category.html"><h3 class="u-add-bottom">Candid Photography</h3></a>
+                                        <p class="drop-cap">
+                                            Candid photography captures spontaneous moments as they happen, without posing or staging. 
+                                            It’s about being in the right place at the right time to capture genuine emotions and interactions. This style is often used in street photography, events, and personal projects, where the goal is to document life as it unfolds. 
+                                            Candid photographs are powerful because they capture the raw, unfiltered essence of a moment, providing a glimpse into the true emotions and experiences of the subjects.
+                                        </p>
+                
+                                        <footer>
+                                        </footer>
+
+                <div>
+
                 
                             </div> <!-- end row -->       
 
@@ -307,31 +308,84 @@ Photography is an art form that captures moments and tells stories, turning flee
         
         </h3>
 
-        <form name="contactForm" id="contactForm" method="post" action="" autocomplete="off">
+        <form id="cForm" class="entry__form" method="post" action="" autocomplete="off">
             <fieldset class="row">
-
                 <div class="column lg-6 tab-12 form-field">
-                    <input name="cName" id="cName" class="u-fullwidth h-remove-bottom" placeholder="Your Name" value="" type="text">
+                    <input name="cName" id="cName" class="u-fullwidth" placeholder="Your Name" value="" type="text" required>
                 </div>
-
+    
                 <div class="column lg-6 tab-12 form-field">
-                    <input name="cEmail" id="cEmail" class="u-fullwidth h-remove-bottom" placeholder="Your Email" value="" type="text">
+                    <input name="cEmail" id="cEmail" class="u-fullwidth" placeholder="Your Email" value="" type="email" required>
                 </div>
-
+    
                 <div class="column lg-12 form-field">
-                    <input name="cWebsite" id="cWebsite" class="u-fullwidth h-remove-bottom" placeholder="Website or Instagram" value="" type="text">
+                    <input name="cWebsite" id="cWebsite" class="u-fullwidth" placeholder="Website / Company" value="" type="text">
                 </div>
-
+    
                 <div class="column lg-12 message form-field">
-                    <textarea name="cMessage" id="cMessage" class="u-fullwidth" placeholder="Your Message"></textarea>
+                    <textarea name="cMessage" id="cMessage" class="u-fullwidth" placeholder="Your Message" required></textarea>
                 </div>
-
+    
                 <div class="column lg-12">
-                    <input name="submit" id="submit" class="btn btn--primary btn-wide btn--large u-fullwidth" value="Add Comment" type="submit">
+                    <input name="submitEmail" id="submitEmail" class="btn btn--primary btn-wide btn--large u-fullwidth" value="Send via Email" type="button">
+                    <input name="submitWhatsApp" id="submitWhatsApp" class="btn btn--primary btn-wide btn--large u-fullwidth" value="Send via WhatsApp" type="button">
                 </div>
-
             </fieldset>
-        </form> <!-- end form -->
+        </form>
+    
+        <script>
+            function getFormValues() {
+                return {
+                    name: encodeURIComponent(document.getElementById('cName').value),
+                    email: encodeURIComponent(document.getElementById('cEmail').value),
+                    website: encodeURIComponent(document.getElementById('cWebsite').value),
+                    message: encodeURIComponent(document.getElementById('cMessage').value),
+                };
+            }
+    
+            function createMailtoURL() {
+                const { name, email, website, message } = getFormValues();
+                const subject = 'Contact Form Submission';
+                const body = `
+                    Name: ${decodeURIComponent(name)}
+                    
+                    Email: ${decodeURIComponent(email)}
+                    
+                    Website or Company: ${decodeURIComponent(website)}
+                    
+                    Message:
+                    ${decodeURIComponent(message)}
+                `.replace(/\n/g, '%0D%0A'); // Encode line breaks for email
+                
+                return `mailto:sohithnr29@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+            }
+    
+            function createWhatsAppURL() {
+                const { name, email, website, message } = getFormValues();
+                const text = `
+                    *Contact Form Submission*
+                    
+                    *Name:* ${decodeURIComponent(name)}
+                    
+                    *Email:* ${decodeURIComponent(email)}
+                    
+                    *Website or Company:* ${decodeURIComponent(website)}
+                    
+                    *Message:*
+                    ${decodeURIComponent(message)}
+                `.replace(/\n/g, '%0A'); // Encode line breaks for WhatsApp
+    
+                return `https://api.whatsapp.com/send?phone=+91-7337728776&text=${text}`;
+            }
+    
+            document.getElementById('submitEmail').addEventListener('click', function() {
+                window.location.href = createMailtoURL();
+            });
+    
+            document.getElementById('submitWhatsApp').addEventListener('click', function() {
+                window.open(createWhatsAppURL(), '_blank');
+            });
+        </script><!-- end form -->
 
     </div>
     <!-- END respond-->
@@ -366,11 +420,21 @@ Photography is an art form that captures moments and tells stories, turning flee
                     </p>
 
                     <form id="mc-form" class="mc-form">
-                        <input type="email" name="EMAIL" id="mce-EMAIL" class="u-fullwidth text-center" placeholder="Your Email Address" title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required>
-                        <input type="submit" name="subscribe" value="Subscribe" class="btn--small btn--primary u-fullwidth">
-                        <!-- <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cdb7b577e41181934ed6a6a44_9a91cfe7b3" tabindex="-1" value=""></div> -->
+                        <input type="text" name="MESSAGE" id="mce-MESSAGE" class="u-fullwidth text-center" placeholder="Your message" required>
+                        <input type="button" id="send-button" value="Send via Instagram" class="btn--small btn--primary u-fullwidth">
                         <div class="mc-status"></div>
                     </form>
+                
+                    <script>
+                        document.getElementById('send-button').addEventListener('click', function() {
+                            var message = document.getElementById('mce-MESSAGE').value;
+                            var instagramProfileUrl = 'https://www.instagram.com/sohithnarnavaram/';
+                            var prefilledMessage = encodeURIComponent(`Hello! I'd like to discuss the following message: ${message}`);
+                            var messageUrl = `${instagramProfileUrl}?message=${prefilledMessage}`;
+                            window.open(instagramProfileUrl, '_blank');
+                        });
+                    </script>
+
 
                 </div>
             </div> <!-- end s-footer__subscribe -->
@@ -410,7 +474,7 @@ Photography is an art form that captures moments and tells stories, turning flee
                                         <li><a href="index.html">Home</a></li>
                                         <li><a href="category.html">Gallery</a></li>
                                         <li><a href="about.html">About</a></li>
-                                        <li><a href="about.html">Contact</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
                                         <li><a href="#0">Terms&Policy</a></li>
                                     </ul>
                                 </div>
