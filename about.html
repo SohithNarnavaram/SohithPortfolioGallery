@@ -46,7 +46,7 @@
     <div id="page" class="s-pagewrap">
 
 
-        <!-- # site header 
+            <!-- # site header 
         ================================================== -->
         <header id="masthead" class="s-header">
 
@@ -63,19 +63,23 @@
                     <h3 class="s-header__nav-heading">Navigate to</h3>
     
                     <ul class="s-header__nav">
-                        <li><a href="index.html" title="">Home</a></li>
+                        <li ><a href="index.html" title="">Home</a></li>
                         <li class="has-children">
                             <a href="#0" title="" class="">Categories</a>
                             <ul class="sub-menu">
-                                <li><a href="category.html">Design</a></li>
-                                <li><a href="category.html">Lifestyle</a></li>
-                                <li><a href="category.html">Inspiration</a></li>
-                                <li><a href="category.html">Work</a></li>
-                                <li><a href="category.html">Health</a></li>
-                                <li><a href="category.html">Photography</a></li>
+                                <li><a href="#concert">Concert</a></li>
+                                <li><a href="#Lifestyle">Lifestyle</a></li>
+                                <li><a href="#WildLife">WildLife</a></li>
+                                <li><a href="#Potrait">Potrait</a></li>
+                                <li><a href="#Candid">Candid</a></li>
+                                <li><a href="#Food">Food</a></li>
+                                <li><a href="#Monochromatic">Monochromatic</a></li>
                             </ul>
                         </li>
-                        <li><a href="styles.html" title="">Styles</a></li>
+                        <li class="has-Photographs">
+                            <a href="category.html" title="" class="">Gallery</a>
+                        </li>
+                        <li ><a href="styles.html" title="">Styles</a></li>
                         <li class="current-menu-item"><a href="about.html" title="">About</a></li>
                         <li><a href="contact.html" title="">Contact</a></li>
                     </ul> <!-- end s-header__nav -->
@@ -269,11 +273,20 @@
                     </p>
 
                     <form id="mc-form" class="mc-form">
-                        <input type="email" name="EMAIL" id="mce-EMAIL" class="u-fullwidth text-center" placeholder="Your Email Address" title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required>
-                        <input type="submit" name="subscribe" value="Subscribe" class="btn--small btn--primary u-fullwidth">
-                        <!-- <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cdb7b577e41181934ed6a6a44_9a91cfe7b3" tabindex="-1" value=""></div> -->
+                        <input type="text" name="MESSAGE" id="mce-MESSAGE" class="u-fullwidth text-center" placeholder="Your message" required>
+                        <input type="button" id="send-button" value="Send via Instagram" class="btn--small btn--primary u-fullwidth">
                         <div class="mc-status"></div>
                     </form>
+                
+                    <script>
+                        document.getElementById('send-button').addEventListener('click', function() {
+                            var message = document.getElementById('mce-MESSAGE').value;
+                            var instagramProfileUrl = 'https://www.instagram.com/sohithnarnavaram/';
+                            var prefilledMessage = encodeURIComponent(`Hello! I'd like to discuss the following message: ${message}`);
+                            var messageUrl = `${instagramProfileUrl}?message=${prefilledMessage}`;
+                            window.open(instagramProfileUrl, '_blank');
+                        });
+                    </script>
 
                 </div>
             </div> <!-- end s-footer__subscribe -->
@@ -313,7 +326,7 @@
                                         <li><a href="index.html">Home</a></li>
                                         <li><a href="category.html">Gallery</a></li>
                                         <li><a href="about.html">About</a></li>
-                                        <li><a href="about.html">Contact</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
                                         <li><a href="#0">Terms&Policy</a></li>
                                     </ul>
                                 </div>
