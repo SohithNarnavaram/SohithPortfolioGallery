@@ -68,15 +68,49 @@
 <body id="top">
 
 
-    <!-- preloader
+<!-- preloader
     ================================================== -->
-    <div id="preloader">
-        <div id="loader" class="dots-fade">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+<div id="preloader">
+    <div id="loader" class="dots-fade">
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
+    <p class="loading-message">Hold tight! We’re brewing up something magical. This might take a minute, but it’ll be worth it!</p>
+</div>
+
+<style>
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff; /* Background color for the preloader */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Stack elements vertically */
+    z-index: 9999; /* Ensure it appears on top */
+}
+
+#loader.dots-fade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#loader.dots-fade div {
+    background: #140e0e; /* Color of the dots */
+}
+
+#preloader .loading-message {
+    margin-top: 10px; /* Space between the loader and the message */
+    color: #070303; /* Adjust the color to fit your design */
+    font-size: 16px;
+}
+</style>
+
 
 
     <!-- page wrap
